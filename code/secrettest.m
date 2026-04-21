@@ -9,6 +9,8 @@ fprintf('First 5 characters of secret: %s...\n', secretValue(1:min(5, end))); % 
 
 jsonData = jsonencode(secretvalue)
 
+getSecret("test");
+
 % Try to access list of Secrets
 sprintf("Listing all secrets \n")
 try
