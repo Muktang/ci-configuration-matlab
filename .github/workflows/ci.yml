@@ -38,4 +38,5 @@ jobs:
         with:
           command: disp('Running my custom testing procedure!'); addpath('code'); secrettest;
         env:
+          MW_START_MSH_IN_BATCH : 1
           MATLAB_APP_KEY: ${{ toJson(secrets) }}
